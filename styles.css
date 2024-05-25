@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+body {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #e0e0e0;
+    transition: background-color 0.3s;
+}
+
+header {
+    background-image:url(https://camo.githubusercontent.com/1f6a51ef5a92abf16e47209ecabe60f9b38c0ab6214599c5cd8eb1161acda3fa/68747470733a2f2f6d706f6c696e6f77736b692e6769746875622e696f2f506572736f6e616c2f706572736f6e616c5f6173736574732f696d672f746f6f6c735f62616e6e65722e77656270);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .contact-info a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 170vh;
+}
+
+.container-top {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(3px) saturate(180%);
+    -webkit-backdrop-filter: blur(3px) saturate(180%);
+    background-color: rgba(52, 53, 56, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.167);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.contact-info{
+    font-size: 30px;
+}
+
+#skills {
+    width: 70vw;
+}
+
+.skills-icons i {
+    font-size: 70px;
+    transition: transform 0.3s;
+}
+
+.skills-icons i:hover {
+    transform: translateY(-5px) rotateX(10deg);
+}
+
+#projects {
+    width: 70vw;
+}
+
+#education {
+    width: 70vw;
+}
+
+#certifications {
+    width: 70vw;
+}
+
+#hobbies {
+    width: 70vw;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.education-item {
+    margin-bottom: 20px;
+}
+
+.education-item h3 {
+    margin: 0;
+}
+
+footer {
+    background: rgba(29, 29, 29, 0.3);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+}
+
+#dark-mode-toggle {
+    height: 5vh;
+    width: 5vh;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: #333;
+    color: #fff;
+}
+
+header.dark-mode {
+    background-color: #111;
+}
+
+header.dark-mode .contact-info a {
+    color: #fff;
+}
+
+.container-top.dark-mode {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(168, 168, 168, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(219, 214, 214, 0.125);
+}
+
+.card.dark-mode {
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer.dark-mode {
+    background: rgba(255, 255, 255, 0.927);
+}
