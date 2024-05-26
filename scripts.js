@@ -1,3 +1,12 @@
+document.addEventListener("visibilitychange", function() {
+    if (document.hidden) {
+        document.title = "please come back🥺";
+    } else {
+        document.title = "Bikram Dey - Web Developer";
+    }
+});
+
+
 document.addEventListener('DOMContentLoaded', function () {
    
     const skills = document.querySelectorAll('.skills-icons i');
