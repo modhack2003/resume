@@ -38,9 +38,9 @@ main {
     height: 150vh;
 }
 
-.avatar {
-    width: 60px;
-    height: 60px;
+img.avatar {
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     margin-right: 10px;
     vertical-align: middle;
