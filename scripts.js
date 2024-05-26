@@ -1,6 +1,6 @@
 document.addEventListener("visibilitychange", function() {
     if (document.hidden) {
-        document.title = "please come back🥺";
+        document.title = " It's  very Important❗❗❗";
     } else {
         document.title = "Bikram Dey - Web Developer";
     }
