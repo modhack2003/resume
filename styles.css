@@ -35,7 +35,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    height: 150vh;
+    height: 170vh;
 }
 
 img.avatar {
@@ -73,7 +73,13 @@ img.avatar {
 #skills {
     width: 70vw;
 }
-
+.skills-icons{
+    display: flex;
+    
+    flex-direction:row;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
 .skills-icons i {
     font-size: 70px;
     transition: transform 0.3s;
@@ -121,6 +127,10 @@ footer {
     bottom: 0;
     backdrop-filter: blur(10px);
 }
+.blank{
+    height: 100vh;
+    width: 100%;
+}
 
 #dark-mode-toggle {
     height: 5vh;
@@ -166,4 +176,17 @@ header.dark-mode .contact-info a {
 
 footer.dark-mode {
     background: rgba(255, 255, 255, 0.927);
+}
+
+
+@media only screen and (max-width: 768px)and (min-width:320px) {
+    section#hobbies {
+        margin-bottom: 200px; /* Adjust this value as needed */
+    }
+}
+
+@media (max-width: 768px) and (min-width:320px){
+    main {
+        height:auto ; /* Adjust height as needed */
+    }
 }
