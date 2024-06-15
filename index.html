@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bikram Dey - Web Developer</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <style>
         .skills-icons i,
@@ -21,7 +23,8 @@
     </style>
 </head>
 
-<body>
+<body class="light-mode">
+    <div id="particles-js"></div>
     <header class="head">
         <div class="container-top">
             <button id="dark-mode-toggle">🌙</button>
@@ -30,8 +33,7 @@
             <div class="contact-info">
                 <a href="mailto:bikram20031213@gmail.com"><i class='bx bx-envelope'></i></a> |
                 <a href="tel:+917003529970"><i class='bx bx-phone'></i></a> |
-                <a href="https://www.linkedin.com/in/bikram-dey-700452997020031312" target="_blank"><i
-                        class='bx bxl-linkedin'></i></a> |
+                <a href="https://www.linkedin.com/in/bikram-dey-700452997020031312" target="_blank"><i class='bx bxl-linkedin'></i></a> |
                 <a href="https://github.com/modhack2003" target="_blank"><i class='bx bxl-github'></i></a>
             </div>
         </div>
@@ -39,12 +41,9 @@
     <main>
         <section id="about">
             <div class="container card">
-                <h2><img src="https://avatars.githubusercontent.com/modhack2003" alt="GitHub Avatar"
-                        class="avatar" />About Me</h2>
-                <p>I'm a passionate cyber security enthusiast with a keen interest in programming. Here you'll find a
-                    variety of projects and contributions related to my areas of expertise and personal interests.</p>
-                    <div class="resume"><a href="./public/BikramDey.pdf" download><i class="bx bxs-file-pdf"></i> Download Resume</a>
-                    </div>
+                <h2><img src="https://avatars.githubusercontent.com/modhack2003" alt="GitHub Avatar" class="avatar" />About Me</h2>
+                <p>I'm a passionate cyber security enthusiast with a keen interest in programming. Here you'll find a variety of projects and contributions related to my areas of expertise and personal interests.</p>
+                <div class="resume"><a href="./public/BikramDey.pdf" download><i class="bx bxs-file-pdf"></i> Download Resume</a></div>
             </div>
         </section>
         <section id="skills">
@@ -59,31 +58,23 @@
                     <i class='bx bxl-angular' style="color: #DD0031;"></i>
                     <i class='bx bxl-typescript' style="color: #3178C6;"></i>
                     <i class='bx bxl-nodejs' style="color: #68A063;"></i>
-                    <img width="50" height="50" src="https://img.icons8.com/ios/50/000000/express-js.png"
-                        alt="express-js" />
+                    <img width="50" height="50" src="https://img.icons8.com/ios/50/000000/express-js.png" alt="express-js" />
                     <i class='bx bxl-django' style='color:#208333'></i>
                     <i class='bx bxl-bootstrap' style="color: #7952B3;"></i>
                     <i class='bx bxl-tailwind-css' style="color: #38B2AC;"></i>
                     <i class='bx bxl-php' style="color: #777BB4;"></i>
                     <i class='bx bxl-mongodb' style="color: #47A248;"></i>
                     <i class='bx bxs-data' style="color: #00758F;"></i>
-                    <img class="nextjs" width="48" height="48" src="https://img.icons8.com/color/48/nextjs.png"
-                        alt="nextjs" />
+                    <img class="nextjs" width="48" height="48" src="https://img.icons8.com/color/48/nextjs.png" alt="nextjs" />
                     <i class='bx bxl-postgresql' style="color: #336791;"></i>
                     <i class='bx bxl-sass' style="color: #CC6699;"></i>
                     <i class='bx bxl-jquery' style='color:#008bf7'></i>
                     <i class='bx bxl-git' style="color: #F05032;"></i>
                     <i class='bx bxl-docker' style='color:#1082d0'></i>
                     <i class='bx bxl-visual-studio' style="color: #008bf7;"></i>
-                    <img width="24" height="24"
-                        src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-color-tal-revivo.png"
-                        alt="external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-color-tal-revivo" />
-                    <img width="64" height="64" src="https://img.icons8.com/wired/64/000000/postman-api.png"
-                        alt="postman-api" />
+                    <img width="24" height="24" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-color-tal-revivo.png" alt="external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-color-tal-revivo" />
+                    <img width="64" height="64" src="https://img.icons8.com/wired/64/000000/postman-api.png" alt="postman-api" />
                     <i class='bx bxl-tux' undefined></i>
-
-
-
                 </div>
             </div>
         </section>
@@ -92,15 +83,12 @@
                 <h2>Projects</h2>
                 <div class="project">
                     <h3> Weathering With You</h3>
-                    <p>This is a simple weather application that allows users to check the current weather conditions of
-                        a location. The app uses OpenWeatherMap API to fetch weather data.</p>
+                    <p>This is a simple weather application that allows users to check the current weather conditions of a location. The app uses OpenWeatherMap API to fetch weather data.</p>
                     <p><a href="https://tenkinoko.netlify.app/"> go check out</a></p>
                     <h3>MERN Stack to-do webpage</h3>
-                    <p>A MERN stack to-do webpage is a web application built using the MERN stack, which consists of
-                        MongoDB, Express.js, React.js, and Node.js. This web application allows users to manage their
-                        to-do lists, including adding, updating, and deleting tasks.</p>
-                        <H4>Currently under Development </H4>
-                        <p><a href="https://github.com/modhack2003/CURD_APP"> Check github repositories</a></p>
+                    <p>A MERN stack to-do webpage is a web application built using the MERN stack, which consists of MongoDB, Express.js, React.js, and Node.js. This web application allows users to manage their to-do lists, including adding, updating, and deleting tasks.</p>
+                    <h4>Currently under Development </h4>
+                    <p><a href="https://github.com/modhack2003/CURD_APP"> Check github repositories</a></p>
                 </div>
             </div>
         </section>
@@ -137,6 +125,134 @@
         </div>
     </footer>
     <script src="./scripts.js"></script>
+    <script>
+        function loadParticles(color) {
+            particlesJS('particles-js',
+                {
+                    "particles": {
+                        "number": {
+                            "value": 80,
+                            "density": {
+                                "enable": true,
+                                "value_area": 800
+                            }
+                        },
+                        "color": {
+                            "value": color
+                        },
+                        "shape": {
+                            "type": "circle",
+                            "stroke": {
+                                "width": 0,
+                                "color": "#000000"
+                            },
+                            "polygon": {
+                                "nb_sides": 5
+                            }
+                        },
+                        "opacity": {
+                            "value": 0.5,
+                            "random": false,
+                            "anim": {
+                                "enable": false,
+                                "speed": 1,
+                                "opacity_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "size": {
+                            "value": 5,
+                            "random": true,
+                            "anim": {
+                                "enable": false,
+                                "speed": 40,
+                                "size_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "line_linked": {
+                            "enable": true,
+                            "distance": 150,
+                            "color": color,
+                            "opacity": 0.4,
+                            "width": 1
+                        },
+                        "move": {
+                            "enable": true,
+                            "speed": 6,
+                            "direction": "none",
+                            "random": false,
+                            "straight": false,
+                            "out_mode": "out",
+                            "bounce": false,
+                            "attract": {
+                                "enable": false,
+                                "rotateX": 600,
+                                "rotateY": 1200
+                            }
+                        }
+                    },
+                    "interactivity": {
+                        "detect_on": "canvas",
+                        "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "repulse"
+                            },
+                            "onclick": {
+                                "enable": true,
+                                "mode": "push"
+                            },
+                            "resize": true
+                        },
+                        "modes": {
+                            "grab": {
+                                "distance": 400,
+                                "line_linked": {
+                                    "opacity": 1
+                                }
+                            },
+                            "bubble": {
+                                "distance": 400,
+                                "size": 40,
+                                "duration": 2,
+                                "opacity": 8,
+                                "speed": 3
+                            },
+                            "repulse": {
+                                "distance": 200,
+                                "duration": 0.4
+                            },
+                            "push": {
+                                "particles_nb": 4
+                            },
+                            "remove": {
+                                "particles_nb": 2
+                            }
+                        }
+                    },
+                    "retina_detect": true
+                }
+            );
+        }
+
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        darkModeToggle.addEventListener('click', function () {
+            document.body.classList.toggle('light-mode');
+
+            if (document.body.classList.contains('light-mode')) {
+                darkModeToggle.textContent = "☀️";
+                loadParticles('#000000'); // Change particles color to white for dark mode
+            } else {
+                darkModeToggle.textContent = "🌙";
+                loadParticles('#ffffff'); // Change particles color to black for light mode
+            }
+        });
+
+        // Initial load with light mode particles color
+        loadParticles('#000000');
+    </script>
+    
 </body>
 
 </html>

@@ -1,9 +1,7 @@
-
+-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-
 body {
-
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -15,7 +13,7 @@ body {
 }
 
 header {
-    background-image:url(https://camo.githubusercontent.com/1f6a51ef5a92abf16e47209ecabe60f9b38c0ab6214599c5cd8eb1161acda3fa/68747470733a2f2f6d706f6c696e6f77736b692e6769746875622e696f2f506572736f6e616c2f706572736f6e616c5f6173736574732f696d672f746f6f6c735f62616e6e65722e77656270);
+    background-image: url(https://camo.githubusercontent.com/1f6a51ef5a92abf16e47209ecabe60f9b38c0ab6214599c5cd8eb1161acda3fa/68747470733a2f2f6d706f6c696e6f77736b692e6769746875622e696f2f506572736f6e616c2f706572736f6e616c5f6173736574732f696d672f746f6f6c735f62616e6e65722e77656270);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -46,6 +44,7 @@ img.avatar {
     margin-right: 10px;
     vertical-align: middle;
 }
+
 .container-top {
     width: 80%;
     margin: auto;
@@ -67,20 +66,22 @@ img.avatar {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.contact-info{
+
+.contact-info {
     font-size: 30px;
 }
 
 #skills {
     width: 70vw;
 }
-.skills-icons{
+
+.skills-icons {
     display: flex;
-    
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
     overflow: hidden;
 }
+
 .skills-icons i {
     font-size: 70px;
     transition: transform 0.3s;
@@ -117,21 +118,22 @@ h2 {
 .education-item h3 {
     margin: 0;
 }
-a{
+
+a {
     text-decoration: none;
     color: #1f1f1fdf;
     padding: 10px;
 }
-a:hover{
+
+a:hover {
     color: #3198a3;
     border: 1px solid #3198a3;
-    
     border-radius: 20px;
 }
-a:active{
+
+a:active {
     color: #fff;
 }
-
 
 footer {
     background: rgba(29, 29, 29, 0.3);
@@ -142,8 +144,10 @@ footer {
     position: fixed;
     bottom: 0;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter:blur(10px)
 }
-.blank{
+
+.blank {
     height: 100vh;
     width: 100%;
 }
@@ -194,18 +198,29 @@ footer.dark-mode {
     background: rgba(255, 255, 255, 0.927);
 }
 
-
-@media only screen and (max-width: 768px)and (min-width:320px) {
-    main{
+@media only screen and (max-width: 768px)and (min-width: 320px) {
+    main {
         margin-bottom: 0;
     }
+
     section#hobbies {
-        margin-bottom: 200px; /* Adjust this value as needed */
+        margin-bottom: 200px;
+        /* Adjust this value as needed */
     }
 }
 
-@media (max-width: 768px) and (min-width:320px){
+@media (max-width: 768px) and (min-width: 320px) {
     main {
-        height:auto ; /* Adjust height as needed */
+        height: auto;
+        /* Adjust height as needed */
     }
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
 }
