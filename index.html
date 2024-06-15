@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bikram Dey - Web Developer</title>
@@ -118,12 +119,13 @@
             </div>
         </section>
     </main>
-
+   
     <footer>
         <div class="container-foot">
             <p>&copy; 2024 Bikram </p>
         </div>
     </footer>
+    
     <script src="./scripts.js"></script>
     <script>
         function loadParticles(color) {
@@ -242,14 +244,14 @@
 
             if (document.body.classList.contains('light-mode')) {
                 darkModeToggle.textContent = "☀️";
-                loadParticles('#000000'); // Change particles color to white for dark mode
+                loadParticles('#000000'); 
             } else {
                 darkModeToggle.textContent = "🌙";
-                loadParticles('#ffffff'); // Change particles color to black for light mode
+                loadParticles('#ffffff'); 
             }
         });
 
-        // Initial load with light mode particles color
+        
         loadParticles('#000000');
     </script>
     
